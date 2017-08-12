@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-	"Ionicons": "ionicons#^2.0.1"
+    "Ionicons": "ionicons#^2.0.1"
   }
 }

@@ -21,57 +21,55 @@ import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
 
 /**
- *
  * @author GedMarc
  * @since 26 Feb 2017
- *
  */
 @PluginInformation(pluginName = "IonIcons", pluginUniqueName = "ion-icons",
-                   pluginDescription = "The premium icon font for Ionic Framework.",
-                   pluginVersion = "2.0.1",
-                   pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons",
-                   pluginSubtitle = "The premium icon font for Ionic Framework.",
-                   pluginGitUrl = "https://github.com/GedMarc/JWebSwing-IoniconsPlugin",
-                   pluginSourceUrl = "https://github.com/driftyco/ionicons",
-                   pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-IoniconsPlugin/wiki",
-                   pluginOriginalHomepage = "http://ionicons.com/",
-                   pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IoniconsPlugin.jar/download",
-                   pluginIconUrl = "bower_components/Ionicons/ionicons-icon.png",
-                   pluginIconImageUrl = "bower_components/Ionicons/ionicons-logo.png",
-                   pluginLastUpdatedDate = "2017/03/04"
+		pluginDescription = "The premium icon font for Ionic Framework.",
+		pluginVersion = "2.0.1",
+		pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons",
+		pluginSubtitle = "The premium icon font for Ionic Framework.",
+		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-IoniconsPlugin",
+		pluginSourceUrl = "https://github.com/driftyco/ionicons",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-IoniconsPlugin/wiki",
+		pluginOriginalHomepage = "http://ionicons.com/",
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IoniconsPlugin.jar/download",
+		pluginIconUrl = "bower_components/Ionicons/ionicons-icon.png",
+		pluginIconImageUrl = "bower_components/Ionicons/ionicons-logo.png",
+		pluginLastUpdatedDate = "2017/03/04"
 )
 public class IonIconsPageConfigurator extends PageConfigurator
 {
 
-    private static final long serialVersionUID = 1L;
-    private static final IonIconsCSSReference reference = new IonIconsCSSReference();
+	private static final long serialVersionUID = 1L;
+	private static final IonIconsCSSReference reference = new IonIconsCSSReference();
 
-    /**
-     * A new instance of the page configurator
-     */
-    public IonIconsPageConfigurator()
-    {
+	/**
+	 * A new instance of the page configurator
+	 */
+	public IonIconsPageConfigurator()
+	{
 
-    }
+	}
 
-    @Override
-    public Page configure(Page page)
-    {
-        if (!page.isConfigured())
-        {
-            page.getBody().addCssReference(reference);
-        }
-        return page;
-    }
+	/**
+	 * Get the reference
+	 *
+	 * @return
+	 */
+	public static IonIconsCSSReference getReference()
+	{
+		return reference;
+	}
 
-    /**
-     * Get the reference
-     *
-     * @return
-     */
-    public static IonIconsCSSReference getReference()
-    {
-        return reference;
-    }
+	@Override
+	public Page configure(Page page)
+	{
+		if (!page.isConfigured())
+		{
+			page.getBody().addCssReference(reference);
+		}
+		return page;
+	}
 
 }

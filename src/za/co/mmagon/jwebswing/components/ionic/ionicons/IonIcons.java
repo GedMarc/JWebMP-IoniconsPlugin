@@ -23,23 +23,23 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  *
  * @author GedMarc
  * @since 26 Feb 2017
- *
  */
 @ComponentInformation(name = "ion-icons ", description = "Enumartion list for ion icons",
-        url = "http://ionicons.com/cheatsheet.html")
+		url = "http://ionicons.com/cheatsheet.html")
 public enum IonIcons
 {
 
-    ;
-    private IonIcons()
-    {
+	;
 
-    }
+	private IonIcons()
+	{
 
-    @Override
-    public String toString()
-    {
-        return super.toString();
-    }
+	}
+
+	@Override
+	public String toString()
+	{
+		return super.toString();
+	}
 
 }
