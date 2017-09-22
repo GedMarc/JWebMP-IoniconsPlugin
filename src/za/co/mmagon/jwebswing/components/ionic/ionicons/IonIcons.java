@@ -28,18 +28,18 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		url = "http://ionicons.com/cheatsheet.html")
 public enum IonIcons
 {
-
+	
 	;
-
-	private IonIcons()
+	
+	IonIcons()
 	{
-
+	
 	}
-
+	
 	@Override
 	public String toString()
 	{
 		return super.toString();
 	}
-
+	
 }

@@ -40,18 +40,18 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 )
 public class IonIconsPageConfigurator extends PageConfigurator
 {
-
+	
 	private static final long serialVersionUID = 1L;
 	private static final IonIconsCSSReference reference = new IonIconsCSSReference();
-
+	
 	/**
 	 * A new instance of the page configurator
 	 */
 	public IonIconsPageConfigurator()
 	{
-
+	
 	}
-
+	
 	/**
 	 * Get the reference
 	 *
@@ -61,7 +61,7 @@ public class IonIconsPageConfigurator extends PageConfigurator
 	{
 		return reference;
 	}
-
+	
 	@Override
 	public Page configure(Page page)
 	{
@@ -71,5 +71,5 @@ public class IonIconsPageConfigurator extends PageConfigurator
 		}
 		return page;
 	}
-
+	
 }

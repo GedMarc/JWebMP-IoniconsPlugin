@@ -26,9 +26,9 @@ import za.co.mmagon.jwebswing.base.references.CSSReference;
  */
 public class IonIconsCSSReference extends CSSReference
 {
-
+	
 	private static final long serialVersionUID = 1L;
-
+	
 	public IonIconsCSSReference()
 	{
 		super("IonIcons", 2.01, "bower_components/Ionicons/css/ionicons.css", "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
