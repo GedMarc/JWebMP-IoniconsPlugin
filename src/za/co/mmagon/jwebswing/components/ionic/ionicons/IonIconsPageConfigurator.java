@@ -49,7 +49,7 @@ public class IonIconsPageConfigurator extends PageConfigurator
 	 */
 	public IonIconsPageConfigurator()
 	{
-	
+		//No config needed
 	}
 	
 	/**
