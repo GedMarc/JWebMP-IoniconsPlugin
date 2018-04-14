@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,20 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.ionic.ionicons;
+package com.jwebmp.components.ionic.ionicons;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.plugins.PluginInformation;
 
 /**
  * @author GedMarc
  * @since 26 Feb 2017
  */
-@PluginInformation(pluginName = "IonIcons", pluginUniqueName = "ion-icons",
+@PluginInformation(pluginName = "IonIcons",
+		pluginUniqueName = "ion-icons",
 		pluginDescription = "The premium icon font for Ionic Framework.",
 		pluginVersion = "2.0.1",
-		pluginDependancyUniqueIDs = "", pluginCategories = "fonts, icons",
+		pluginDependancyUniqueIDs = "",
+		pluginCategories = "fonts, icons",
 		pluginSubtitle = "The premium icon font for Ionic Framework.",
 		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-IoniconsPlugin",
 		pluginSourceUrl = "https://github.com/driftyco/ionicons",
@@ -36,14 +38,14 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IoniconsPlugin.jar/download",
 		pluginIconUrl = "bower_components/Ionicons/ionicons-icon.png",
 		pluginIconImageUrl = "bower_components/Ionicons/ionicons-logo.png",
-		pluginLastUpdatedDate = "2017/03/04"
-)
-public class IonIconsPageConfigurator extends PageConfigurator
+		pluginLastUpdatedDate = "2017/03/04")
+public class IonIconsPageConfigurator
+		extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	private static final IonIconsCSSReference reference = new IonIconsCSSReference();
-	
+
 	/**
 	 * A new instance of the page configurator
 	 */
@@ -51,7 +53,7 @@ public class IonIconsPageConfigurator extends PageConfigurator
 	{
 		//No config needed
 	}
-	
+
 	/**
 	 * Get the reference
 	 *
@@ -61,15 +63,16 @@ public class IonIconsPageConfigurator extends PageConfigurator
 	{
 		return reference;
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			page.getBody().addCssReference(reference);
+			page.getBody()
+			    .addCssReference(reference);
 		}
 		return page;
 	}
-	
+
 }

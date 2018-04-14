@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,32 +14,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.ionic.ionicons;
+package com.jwebmp.components.ionic.ionicons;
 
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
+import com.jwebmp.base.references.CSSReference;
 
 /**
- * A list of all the ion icons that are available
+ * The IonIcons CSS Reference
  *
  * @author GedMarc
- * @since 26 Feb 2017
+ * @since 13 Jan 2017
  */
-@ComponentInformation(name = "ion-icons ", description = "Enumartion list for ion icons",
-		url = "http://ionicons.com/cheatsheet.html")
-public enum IonIcons
+public class IonIconsCSSReference extends CSSReference
 {
-	
-	;
-	
-	IonIcons()
+
+	private static final long serialVersionUID = 1L;
+
+	public IonIconsCSSReference()
 	{
-	
+		super("IonIcons", 2.01, "bower_components/Ionicons/css/ionicons.css", "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 	}
-	
-	@Override
-	public String toString()
-	{
-		return super.toString();
-	}
-	
 }
