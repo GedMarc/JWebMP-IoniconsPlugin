@@ -24,13 +24,14 @@ import com.jwebmp.base.references.CSSReference;
  * @author GedMarc
  * @since 13 Jan 2017
  */
-public class IonIconsCSSReference extends CSSReference
+public class IonIconsCSSReference
+		extends CSSReference
 {
 
 	private static final long serialVersionUID = 1L;
 
 	public IonIconsCSSReference()
 	{
-		super("IonIcons", 2.01, "bower_components/Ionicons/css/ionicons.css", "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+		super("IonIcons", 4.2, "bower_components/Ionicons/docs/css/ionicons.min.css", "http://code.ionicframework.com/ionicons/4.2.0/css/ionicons.min.css");
 	}
 }

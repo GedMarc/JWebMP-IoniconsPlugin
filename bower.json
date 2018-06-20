@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "Ionicons": "ionicons#^2.0.1"
+    "Ionicons": "https://github.com/ionic-team/ionicons.git"
   }
 }

@@ -24,10 +24,12 @@ import com.jwebmp.plugins.ComponentInformation;
  * @author GedMarc
  * @since 26 Feb 2017
  */
-@ComponentInformation(name = "ion-icons ", description = "Enumartion list for ion icons",
+@ComponentInformation(name = "ion-icons ",
+		description = "Enumeration list for ion icons",
 		url = "http://ionicons.com/cheatsheet.html")
 public enum IonIcons
 {
+
 
 	;
 

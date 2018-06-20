@@ -39,12 +39,15 @@ import com.jwebmp.plugins.PluginInformation;
 		pluginIconUrl = "bower_components/Ionicons/ionicons-icon.png",
 		pluginIconImageUrl = "bower_components/Ionicons/ionicons-logo.png",
 		pluginLastUpdatedDate = "2017/03/04")
+@SuppressWarnings("unused")
 public class IonIconsPageConfigurator
 		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
 	private static final IonIconsCSSReference reference = new IonIconsCSSReference();
+
+	private static boolean autoSwitchForIOS;
 
 	/**
 	 * A new instance of the page configurator
@@ -64,6 +67,26 @@ public class IonIconsPageConfigurator
 		return reference;
 	}
 
+	/**
+	 * Auto switches the icon to render for ios when necessary
+	 *
+	 * @return
+	 */
+	public static boolean isAutoSwitchForIOS()
+	{
+		return autoSwitchForIOS;
+	}
+
+	/**
+	 * Auto switches the icons to ios when necessary
+	 *
+	 * @param autoSwitchForIOS
+	 */
+	public static void setAutoSwitchForIOS(boolean autoSwitchForIOS)
+	{
+		IonIconsPageConfigurator.autoSwitchForIOS = autoSwitchForIOS;
+	}
+
 	@Override
 	public Page configure(Page page)
 	{
@@ -74,5 +97,4 @@ public class IonIconsPageConfigurator
 		}
 		return page;
 	}
-
 }
