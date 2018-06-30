@@ -17,7 +17,7 @@
 package com.jwebmp.plugins.ionic.ionicons;
 
 import com.jwebmp.Page;
-import com.jwebmp.guiceinjection.GuiceContext;
+import com.jwebmp.guicedinjection.GuiceContext;
 import com.jwebmp.plugins.ComponentInformation;
 import net.sf.uadetector.OperatingSystemFamily;
 
