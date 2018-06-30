@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.components.ionic.ionicons;
+package com.jwebmp.plugins.ionic.ionicons;
 
 import com.jwebmp.Page;
 import com.jwebmp.PageConfigurator;

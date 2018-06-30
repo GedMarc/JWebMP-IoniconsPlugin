@@ -14,34 +14,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.components.ionic.ionicons;
+package com.jwebmp.plugins.ionic.ionicons;
 
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.base.references.CSSReference;
 
 /**
- * A list of all the ion icons that are available
+ * The IonIcons CSS Reference
  *
  * @author GedMarc
- * @since 26 Feb 2017
+ * @since 13 Jan 2017
  */
-@ComponentInformation(name = "ion-icons ",
-		description = "Enumeration list for ion icons",
-		url = "http://ionicons.com/cheatsheet.html")
-public enum IonIcons
+public class IonIconsCSSReference
+		extends CSSReference
 {
 
+	private static final long serialVersionUID = 1L;
 
-	;
-
-	IonIcons()
+	public IonIconsCSSReference()
 	{
-
+		super("IonIcons", 4.2, "bower_components/Ionicons/docs/css/ionicons.min.css", "http://code.ionicframework.com/ionicons/4.2.0/css/ionicons.min.css");
 	}
-
-	@Override
-	public String toString()
-	{
-		return super.toString();
-	}
-
 }
