@@ -45,7 +45,7 @@ public class IonIconsPageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
-	private static final IonIconsCSSReference reference = new IonIconsCSSReference();
+	private static final IonIconsJSReference reference = new IonIconsJSReference();
 
 	private static boolean autoSwitchForIOS;
 
@@ -62,7 +62,7 @@ public class IonIconsPageConfigurator
 	 *
 	 * @return
 	 */
-	public static IonIconsCSSReference getReference()
+	public static IonIconsJSReference getReference()
 	{
 		return reference;
 	}
@@ -93,7 +93,7 @@ public class IonIconsPageConfigurator
 		if (!page.isConfigured())
 		{
 			page.getBody()
-			    .addCssReference(reference);
+			    .addJavaScriptReference(reference);
 		}
 		return page;
 	}

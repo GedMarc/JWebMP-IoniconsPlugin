@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.ionic.ionicons;
 
-import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.base.references.JavascriptReference;
 
 /**
  * The IonIcons CSS Reference
@@ -24,14 +24,14 @@ import com.jwebmp.base.references.CSSReference;
  * @author GedMarc
  * @since 13 Jan 2017
  */
-public class IonIconsCSSReference
-		extends CSSReference
+public class IonIconsJSReference
+		extends JavascriptReference
 {
 
 	private static final long serialVersionUID = 1L;
 
-	public IonIconsCSSReference()
+	public IonIconsJSReference()
 	{
-		super("IonIcons", 4.2, "bower_components/Ionicons/docs/css/ionicons.min.css", "http://code.ionicframework.com/ionicons/4.2.0/css/ionicons.min.css");
+		super("IonIcons", 4.2, "bower_components/Ionicons/docs/ionicons.min.js", "http://code.ionicframework.com/ionicons/4.2.0/ionicons.min.js");
 	}
 }
