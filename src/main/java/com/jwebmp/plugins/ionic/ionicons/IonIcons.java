@@ -351,7 +351,8 @@ public enum IonIcons
 	water,
 	wifi,
 	wine,
-	woman,;
+	woman,
+	;
 
 	IonIcons()
 	{
