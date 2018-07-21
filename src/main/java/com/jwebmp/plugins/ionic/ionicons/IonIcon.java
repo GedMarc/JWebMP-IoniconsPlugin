@@ -1,6 +1,6 @@
 package com.jwebmp.plugins.ionic.ionicons;
 
-import com.jwebmp.base.html.Italic;
+import com.jwebmp.core.base.html.Italic;
 import net.sf.uadetector.OperatingSystemFamily;
 
 import javax.validation.constraints.NotNull;

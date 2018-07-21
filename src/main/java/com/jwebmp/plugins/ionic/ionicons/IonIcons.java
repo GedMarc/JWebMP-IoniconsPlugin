@@ -16,13 +16,13 @@
  */
 package com.jwebmp.plugins.ionic.ionicons;
 
-import com.jwebmp.Page;
-import com.jwebmp.base.interfaces.ICSSClassName;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.base.interfaces.ICSSClassName;
+import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.guicedinjection.GuiceContext;
-import com.jwebmp.plugins.ComponentInformation;
 import net.sf.uadetector.OperatingSystemFamily;
 
-import static com.jwebmp.utilities.StaticStrings.*;
+import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
  * A list of all the ion icons that are available

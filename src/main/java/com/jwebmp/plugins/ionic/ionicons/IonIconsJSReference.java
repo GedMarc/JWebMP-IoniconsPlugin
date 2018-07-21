@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.ionic.ionicons;
 
-import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.core.base.references.JavascriptReference;
 
 /**
  * The IonIcons CSS Reference
