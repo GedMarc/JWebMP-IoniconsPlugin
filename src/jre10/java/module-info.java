@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.ionic.ionicons.IonIconsPageConfigurator;
+
 module com.jwebmp.plugins.ionic.ionicons {
 	exports com.jwebmp.plugins.ionic.ionicons;
 
@@ -9,4 +12,7 @@ module com.jwebmp.plugins.ionic.ionicons {
 	requires java.logging;
 	requires com.jwebmp.guicedinjection;
 	requires uadetector.core;
+
+	provides IPageConfigurator with IonIconsPageConfigurator;
+
 }
