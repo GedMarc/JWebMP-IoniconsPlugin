@@ -14,5 +14,5 @@ module com.jwebmp.plugins.ionic.ionicons {
 	requires uadetector.core;
 
 	provides IPageConfigurator with IonIconsPageConfigurator;
-
+	opens com.jwebmp.plugins.ionic.ionicons to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
