@@ -17,7 +17,7 @@
 package com.jwebmp.plugins.ionic.ionicons;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.base.interfaces.ICSSClassName;
+import com.jwebmp.core.base.interfaces.ICssClassName;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.guicedinjection.GuiceContext;
 import net.sf.uadetector.OperatingSystemFamily;
@@ -34,7 +34,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 		description = "Enumeration list for ion icons",
 		url = "http://ionicons.com/cheatsheet.html")
 public enum IonIcons
-		implements ICSSClassName
+		implements ICssClassName
 {
 	add_circle,
 	add_circle_outline,
