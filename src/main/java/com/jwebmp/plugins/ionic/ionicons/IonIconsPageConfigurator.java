@@ -46,7 +46,10 @@ public class IonIconsPageConfigurator
 		implements IPageConfigurator
 {
 	private static final IonIconsJSReference reference = new IonIconsJSReference();
-
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
 	private static boolean autoSwitchForIOS;
 
 	/**
@@ -58,13 +61,38 @@ public class IonIconsPageConfigurator
 	}
 
 	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return IonIconsPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		IonIconsPageConfigurator.enabled = mustEnable;
+	}
+
+	/**
 	 * Get the reference
 	 *
 	 * @return
 	 */
 	public static IonIconsJSReference getReference()
 	{
-		return reference;
+		return IonIconsPageConfigurator.reference;
 	}
 
 	/**
@@ -74,7 +102,7 @@ public class IonIconsPageConfigurator
 	 */
 	public static boolean isAutoSwitchForIOS()
 	{
-		return autoSwitchForIOS;
+		return IonIconsPageConfigurator.autoSwitchForIOS;
 	}
 
 	/**
@@ -94,8 +122,14 @@ public class IonIconsPageConfigurator
 		if (!page.isConfigured())
 		{
 			page.getBody()
-			    .addJavaScriptReference(reference);
+			    .addJavaScriptReference(IonIconsPageConfigurator.reference);
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return IonIconsPageConfigurator.enabled;
 	}
 }
