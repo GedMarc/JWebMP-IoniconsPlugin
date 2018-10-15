@@ -33,9 +33,9 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "",
 		pluginCategories = "fonts, icons",
 		pluginSubtitle = "The premium icon font for Ionic Framework.",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-IoniconsPlugin",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-IoniconsPlugin",
 		pluginSourceUrl = "https://github.com/driftyco/ionicons",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-IoniconsPlugin/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-IoniconsPlugin/wiki",
 		pluginOriginalHomepage = "http://ionicons.com/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IoniconsPlugin.jar/download",
 		pluginIconUrl = "bower_components/Ionicons/ionicons-icon.png",
@@ -43,7 +43,7 @@ import javax.validation.constraints.NotNull;
 		pluginLastUpdatedDate = "2017/03/04")
 @SuppressWarnings("unused")
 public class IonIconsPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<IonIconsPageConfigurator>
 {
 	private static final IonIconsJSReference reference = new IonIconsJSReference();
 	/**
