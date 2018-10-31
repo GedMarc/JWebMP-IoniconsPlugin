@@ -28,7 +28,6 @@ public class IonIconsJSReference
 		extends JavascriptReference
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public IonIconsJSReference()
 	{
