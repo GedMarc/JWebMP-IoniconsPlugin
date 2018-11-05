@@ -1,5 +1,8 @@
 import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
 import com.jwebmp.plugins.ionic.ionicons.IonIconsPageConfigurator;
+import com.jwebmp.plugins.ionic.ionicons.implementations.IonIconsExclusionsModule;
 
 module com.jwebmp.plugins.ionic.ionicons {
 	exports com.jwebmp.plugins.ionic.ionicons;
@@ -14,5 +17,8 @@ module com.jwebmp.plugins.ionic.ionicons {
 	requires uadetector.core;
 
 	provides IPageConfigurator with IonIconsPageConfigurator;
-	opens com.jwebmp.plugins.ionic.ionicons to com.fasterxml.jackson.databind,com.jwebmp.core;
+	provides IGuiceScanModuleExclusions with IonIconsExclusionsModule;
+	provides IGuiceScanJarExclusions with IonIconsExclusionsModule;
+
+	opens com.jwebmp.plugins.ionic.ionicons to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
