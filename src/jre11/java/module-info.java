@@ -14,7 +14,6 @@ module com.jwebmp.plugins.ionic.ionicons {
 	requires java.validation;
 	requires java.logging;
 	requires com.jwebmp.guicedinjection;
-	requires uadetector.core;
 
 	provides IPageConfigurator with IonIconsPageConfigurator;
 	provides IGuiceScanModuleExclusions with IonIconsExclusionsModule;
