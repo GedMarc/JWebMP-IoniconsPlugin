@@ -119,7 +119,7 @@ public class IonIconsPageConfigurator
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
+		if (!page.isConfigured() && enabled())
 		{
 			page.getBody()
 			    .addJavaScriptReference(IonIconsPageConfigurator.reference);
