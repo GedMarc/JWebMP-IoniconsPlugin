@@ -19,7 +19,7 @@ package com.jwebmp.plugins.ionic.ionicons;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.interfaces.ICssClassName;
 import com.jwebmp.core.plugins.ComponentInformation;
-import com.jwebmp.guicedinjection.GuiceContext;
+import com.guicedee.guicedinjection.GuiceContext;
 import net.sf.uadetector.OperatingSystemFamily;
 
 import static com.jwebmp.core.utilities.StaticStrings.*;
