@@ -12,7 +12,6 @@ module com.jwebmp.plugins.ionic.ionicons {
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.ionic.ionicons.IonIconsPageConfigurator;
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.ionic.ionicons.implementations.IonIconsExclusionsModule;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.ionic.ionicons.implementations.IonIconsExclusionsModule;
 
 	opens com.jwebmp.plugins.ionic.ionicons to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
