@@ -22,6 +22,8 @@ import com.jwebmp.core.plugins.ComponentInformation;
 import com.guicedee.guicedinjection.GuiceContext;
 import net.sf.uadetector.OperatingSystemFamily;
 
+import static com.guicedee.guicedinjection.json.StaticStrings.CHAR_DASH;
+import static com.guicedee.guicedinjection.json.StaticStrings.CHAR_UNDERSCORE;
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
