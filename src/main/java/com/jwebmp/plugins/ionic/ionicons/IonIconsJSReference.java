@@ -31,6 +31,7 @@ public class IonIconsJSReference
 
 	public IonIconsJSReference()
 	{
-		super("IonIcons", 4.2, "bower_components/Ionicons/docs/ionicons.min.js", "http://code.ionicframework.com/ionicons/4.2.0/ionicons.min.js");
+		super("IonIcons", 4.2, "bower_components/Ionicons/docs/ionicons.min.js",
+		      "http://code.ionicframework.com/ionicons/4.2.0/ionicons.min.js");
 	}
 }

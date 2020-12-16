@@ -17,7 +17,9 @@
 package com.jwebmp.plugins.ionic.ionicons;
 
 import com.jwebmp.core.Page;
+import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -29,7 +31,7 @@ import jakarta.validation.constraints.NotNull;
 @PluginInformation(pluginName = "IonIcons",
 		pluginUniqueName = "ion-icons",
 		pluginDescription = "The premium icon font for Ionic Framework.",
-		pluginVersion = "2.0.1",
+		pluginVersion = "5.2.3",
 		pluginDependancyUniqueIDs = "",
 		pluginCategories = "fonts, icons",
 		pluginSubtitle = "The premium icon font for Ionic Framework.",
@@ -40,7 +42,12 @@ import jakarta.validation.constraints.NotNull;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IoniconsPlugin.jar/download",
 		pluginIconUrl = "bower_components/Ionicons/ionicons-icon.png",
 		pluginIconImageUrl = "bower_components/Ionicons/ionicons-logo.png",
-		pluginLastUpdatedDate = "2017/03/04")
+		pluginLastUpdatedDate = "2020/12/15",
+		pluginGroupId = "com.jwebmp.plugins.ion",
+		pluginArtifactId = "jwebmp-ion-icons",
+		pluginModuleName = "com.jwebmp.plugins.ionic.ionicons",
+		pluginStatus = PluginStatus.Released
+)
 @SuppressWarnings("unused")
 public class IonIconsPageConfigurator
 		implements IPageConfigurator<IonIconsPageConfigurator>
@@ -123,6 +130,9 @@ public class IonIconsPageConfigurator
 		{
 			page.getBody()
 			    .addJavaScriptReference(IonIconsPageConfigurator.reference);
+			
+			page.getBody()
+			    .addCssReference(new CSSReference("IonIcons", 5.23, "bower_components/Ionicons/css/ionicons.min.css"));
 		}
 		return page;
 	}
