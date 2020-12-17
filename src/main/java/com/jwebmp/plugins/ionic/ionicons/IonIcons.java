@@ -368,7 +368,7 @@ public enum IonIcons
 		                       .replace("\\$", "");
 		if (IonIconsPageConfigurator.isAutoSwitchForIOS())
 		{
-			Page p = GuiceContext.get(Page.class);
+			Page<?> p = GuiceContext.get(Page.class);
 			if (p.getUserAgent()
 			     .getOperatingSystem()
 			     .getFamily() == OperatingSystemFamily.IOS)
