@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.ion</groupId>
     <artifactId>jwebmp-ion-icons</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>Ion Icons</name>
     <description>The JWebSwing implementation for Ion Icons</description>
     <url>https://github.com/GedMarc/JWebSwing-Ion-Icons</url>
