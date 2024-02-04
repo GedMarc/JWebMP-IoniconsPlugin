@@ -4,7 +4,7 @@ module com.jwebmp.plugins.ionic.ionicons {
 	exports com.jwebmp.plugins.ionic.ionicons;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires jakarta.validation;
 	requires java.logging;
